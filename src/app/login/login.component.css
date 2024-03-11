@@ -1,0 +1,47 @@
+:host {
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card {
+    height: 476px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #588157;
+    border-color: #588157;
+    width: 86px;
+    height: 50px;
+}
+
+.custom-link {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .custom-link:hover {
+    color: blue;
+  }
+
+  input {
+    width: 370px;
+    height: 51px;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #A3B18A;
+  }
+
+  .card-body h2 {
+    font-size: 32px;
+    margin-bottom: 70px;
+    font-family: 'Inter', sans-serif;
+  }
