@@ -1,0 +1,29 @@
+.progress {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    position: relative;
+    background-color: #344E41;
+  }
+  
+  .progress-title,
+  .progress-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff; /* Color del texto */
+  }
+
+  h2{
+    margin-bottom: 60px;
+  }
+  .container{
+    padding: 0px 150px;
+  }
+  .header{
+    margin-top: 100px;
+  }
