@@ -1,1 +1,25 @@
-<p>signin works!</p>
+   <div class="card">
+    <div class="card-body">
+        <form class="text-center">
+            <div class="form-container d-flex flex-column align-items-center">
+                <div class="form-group d-flex flex-column align-items-start">
+              <h3 class="card-title">Queremos saber de ti</h3>
+            <label for="objetivo">¿Qué quieres lograr?</label>
+            <input type="text" class="form-control oneline" id="objetivo" name="objetivo" required>
+          </div>
+          <div class="form-group d-flex flex-column align-items-start">
+            <label for="descripcion">Háblame más de ti:</label>
+            <textarea class="form-control area" id="descripcion" name="descripcion" required></textarea>
+          </div>
+          <div class="form-group d-flex flex-column align-items-start">
+            <label for="intensidad">¿Con cuánta intensidad lo deseas?</label>
+            <input type="range" class="form-control-range" id="intensidad" name="intensidad" min="1" max="100">
+          </div>
+        </div>
+        <div>
+          <button type="button" (click)="nextStep()" class="btn btn-primary">Siguiente</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
