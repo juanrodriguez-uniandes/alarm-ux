@@ -1,1 +1,30 @@
-<p>signin-success works!</p>
+<div class="card">
+    <div class="card-header">
+        <div class="form-container d-flex flex-column align-items-start">
+            <h3>Este es tu resúmen</h3>
+        </div>
+    </div>
+    <div class="card-body" id="content">
+        <p >Este es el resúmen del plan que diseñamos para ti:</p>
+        <h4 class="card-text">Metas</h4>
+        <div class="col-6 align-items-start oneline">
+            <ul class="list-group">
+                <li class="list-group-item border-0 border-bottom">1. Meta #1</li>
+                <li class="list-group-item border-0 border-bottom">2. Meta #2</li>
+                <li class="list-group-item border-0 border-bottom">3. Meta #3</li>
+                <li class="list-group-item border-0 border-bottom">4. Meta #4</li>
+                <li class="list-group-item border-0 border-bottom">5. Meta #5</li>
+            </ul>
+        </div>
+        <p >Te recomendamos que sigas esta rutina de pausas activas:</p>
+        <div class="form-container d-flex flex-column align-items-center">
+            <img class="card-img-top" src="../../assets/undraw_relaxation.svg" alt="Card image cap" width="120" height="120" style="margin: 2%;">
+        </div>
+        <h4 class="card-text">Método de desconexión estratégica</h4>
+        <p >Sabenos que tiendes a olvidar cuidar de ti mismo, así que éste método programa pausa para los momentos claves de tu día como la hora de almuerzo y pausas periódicas de hidratación</p>
+        <p >Recuerda que podras hacer pausas con tus propios tiempos u optar por la recomendación de la app, siempre que lo desees</p>
+        <div class="form-container d-flex flex-column align-items-center">
+            <button type="button" (click)="nextStep()" class="btn btn-primary">Finalizar</button>
+        </div>
+    </div>
+</div>

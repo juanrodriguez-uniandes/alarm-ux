@@ -12,6 +12,6 @@ export const routes: Routes = [
     { path: 'signin', component: SigninComponent },
     { path: 'home', component: HomeComponent },
     { path: 'progress', component: ProgressComponent },
-    { path:'signin-goals', component: SigninGoalsComponent },
-    { path:'signin-success', component: SigninSuccessComponent}
+    { path: 'signin-goals', component: SigninGoalsComponent },
+    { path: 'signin-success', component: SigninSuccessComponent},
 ];
