@@ -12,6 +12,6 @@ export class SigninComponent {
   constructor(private router: Router) {}
   
   nextStep() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/signin-goals']);
   }
 }

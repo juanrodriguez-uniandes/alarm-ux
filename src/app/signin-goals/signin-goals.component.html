@@ -1,1 +1,47 @@
-<p>signin-goals works!</p>
+<div class="card">
+    <div class="card-body">
+        <form class="">
+            <div class="form-container d-flex flex-column align-items-center">
+                <div class="form-group d-flex flex-column align-items-start">
+                    <h3 class="card-title">Configura las metas a trabajar</h3>
+                    <label for="objetivo">Selecciona la meta y asigna las actividades</label>
+                </div>
+                <div class="row form-group d-flex align-items-center">
+                    <div class="col-4 area">
+                        <div class="oneline">
+                            <label for="formControlSelect"></label>
+                            <select class="form-control" id="formControlSelect" (change)="selectActivity()">
+                              <option>Meta 1</option>
+                              <option>Meta 2</option>
+                              <option>Meta 3</option>
+                              <option>Meta 4</option>
+                              <option>Meta 5</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-3 area-button">
+                        <button type="button" (click)="selectAssign()" class="btn btn-primary">Asignar</button>
+                    </div>
+                </div>
+                @if (!state) {
+                <div class="row form-group d-flex align-items-center">
+                    <button type="button" (click)="nextStep()" class="btn btn-primary">Finalizar</button>
+                </div>
+                }
+                @if (state) {
+                    <div class="col-7 align-items-start">
+                        <mat-selection-list #shoes>
+                            @for (activity of typeActivities; track activity) {
+                            <mat-list-option class="mat-primary">{{activity}}</mat-list-option>
+                            }
+                        </mat-selection-list>
+                    </div>
+                    <div class="row form-group d-flex align-items-center">
+                        <button type="button" (click)="lastStep()" class="btn btn-primary">Volver</button>
+                    </div>
+                }
+            </div>
+           
+        </form>
+    </div>
+</div>
